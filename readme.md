@@ -115,4 +115,4 @@ year={2022}
 | 31 | device\_fraud\_count                 | Continuo | 0                | 0        | Ninguno | Nunca            | Fijo   | 100,000    | 1000000           | 0          | 0            | 0                 | 0               |
 | 32 | month                                | Continuo | 0                | 0        | Ninguno | Nunca            | Fijo   | 100,000    | 1000000           | 0          | 0            | 0                 | 0               |
 
-
+### 
