@@ -38,7 +38,7 @@ year={2022}
 ## Paso 2: Explorar y evaluar los datos, el EDA
 
 ### Análisis de calida de datos.
-!["fallo"](//Auditoría de datos de \[32 campos\]\_files//Auditoría de datos de \[32 campos\]\_prop1.jpg)
+!["fallo"](cursos.jfif)
 **Auditoría de datos de \[32 campos\]**
 
 |    |                                      |                                                                                                           |          |          |           |                |           |          |                         |                |             |        |                        |          |                       |           |         |
