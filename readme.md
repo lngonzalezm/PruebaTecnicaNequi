@@ -30,7 +30,7 @@ a proteger al banco de pérdidas financieras y a mantener la seguridad de sus cl
 
 ## Paso 2: Explorar y evaluar los datos, el EDA
 
-### Análisis de calida de datos.
+### Análisis de calidad de datos.
 
 **Auditoría de datos de 32 campos y 1'000.000 de variables**
 
