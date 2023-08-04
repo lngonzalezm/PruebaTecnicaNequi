@@ -1,0 +1,16 @@
+{
+  "BigQuery Schema":[
+    {
+      "name":"CustomerID",
+      "type":"STRING"
+    },
+    {
+      "name":"CustomerDOB",
+      "type":"DATE"
+    },
+    {
+      "name":"CustGender",
+      "type":"STRING"
+    }
+  ]
+}
