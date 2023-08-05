@@ -117,6 +117,7 @@ datos a analizar los datos de sus proyectos de Machine Learning; se usa Dataflow
 procesamiento por lotes administrado de Google Cloud Platform que le permite procesar grandes cantidades de datos de 
 forma rápida y confiable.
 
+
 Los datos deben actualizarse cada seis meses para comprobar que el modelo siga estando vigente, si a lo largo del tiempo 
 es notable que los resultados no tienen variación, se puede actualizar la data de manera anual, hasta que los resultados
 sean diferentes, esto porque la población cambio diferencialmente su comportamiento con relación a las transacciones 
