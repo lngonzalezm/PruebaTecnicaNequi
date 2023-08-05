@@ -124,6 +124,20 @@ bancarias y se debe crear una versión nueva del modelo.
 
 ## Paso 4: Ejecutar la ETL
 
+### Diccionario de datos
+|   |                         |               |                                          |                    |                      | 
+|---|-------------------------|---------------|------------------------------------------|--------------------|----------------------|
+|   | Nombre de la columna	   | Tipo de datos | 	Descripción                             | 	Fuente	           | Ejemplos             | 
+| 1 | TransactionID           | 	Entero       | 	Identificador único de la transacción   | 	bank_transactions | 	T1 , T2, T3         | 
+| 2 | CustomerID              | 	Entero       | 	Identificador único del cliente         | 	bank_transactions | 	C1234567, C1111111	 | 
+| 3 | CustomerDOB             | 	Fecha        | 	Fecha de nacimiento del cliente         | 	bank_transactions | 	4/4/57, 26/11/96    |
+| 4 | CustGender              | 	Cadena       | 	Género del cliente                      | 	bank_transactions | 	F:female, M:male    | 
+| 5 | CustLocation	           | Cadena        | 	Ubicación del cliente                   | 	bank_transactions | 	JHAJJAR , MUMBAI    | 
+| 6 | TransactionDate         | 	Fecha        | 	Fecha de la transacción                 | 	bank_transactions | 	2/8/16, 20/6/20     | 
+| 7 | TransactionTime         | 	Tiempo       | 	Hora de la transacción                  | 	bank_transactions | 	143207	, 123456     | 
+| 8 | TransactionAmount (INR) | 	Decimal	     | Monto de la transacción en rupias indias | bank_transactions  | 	1000.1, 54.2, 10    |
+
+
 
 ## Paso 5: Completar la redacción del proyecto
 
@@ -173,12 +187,14 @@ utilizar Cloud Dataproc para ejecutar trabajos de análisis de datos, se puede u
 fuentes de datos dispares.
 #### Las tuberías se ejecutarán diariamente en una ventana de tiempo específica
 
-Se debe utilizar Cloud Dataflow, que es un servicio de procesamiento por lotes completamente administrado que puede 
-ejecutar tuberías de datos en paralelo. Cloud Dataflow puede ayudar a garantizar que las tuberías se ejecuten de manera
-confiable y eficiente, incluso si hay un gran volumen de datos. También se puede utilizar Cloud Dataproc, que es un 
-servicio de big data completamente administrado que puede ejecutar trabajos de análisis de datos en clústeres de 
-máquinas virtuales. Cloud Dataproc puede ayudar a garantizar que las tuberías se ejecuten de manera confiable y 
-eficiente, incluso si hay un gran volumen de datos.
+Se debe implementar un evento programado con un clúster específico para la ejecución de tuberías en Google Cloud, el 
+proceso es primero, configurar un clúster en Cloud Dataproc y definir un trabajo asociado; luego, en la 
+sección "Configuración del trabajo", acceder a la pestaña "Programación" y establecer la frecuencia y horario del trabajo.
+A continuación, especificar el clúster designado para la tarea y confirmar la creación. De esta manera, el trabajo 
+se llevará a cabo según lo programado. Además, es posible aprovechar estos eventos programados para distintos propósitos,
+como extraer y cargar datos desde una fuente hasta un repositorio, procesar datos y generar informes, o incluso crear 
+modelos de aprendizaje automático. La automatización mediante eventos programados simplifica la ejecución de las 
+tuberías en Google Cloud, ahorrando tiempo y esfuerzo, a la vez que garantiza una consistencia y confiabilidad en el proceso.
 
 #### La base de datos necesitará ser accedido por más de 100 usuarios funcionales
 
